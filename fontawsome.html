@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <style type="text/css">
+  	*{padding: 0;margin: 0;box-sizing: border-box;}
+	
+	/*<!-- ************* heading *************** -->*/
+
+  	#demoH{width: 100%;height: 50px;background-color: rgba(0,255,255,0.7);padding: 5px;}
+  	.left{float: left;padding: 10px}
+  	.right{float:right ;border-right: 2px;padding: 10px}
+/*<!-- ************* heading1 *************** -->*/
+#demoH1{text-align: center;background-image: url("5.jpg");}
+#pa1{font-size: 8px;padding-top: 10px;padding-bottom: 0px;}
+#ha1{padding-top: 0px;letter-spacing: 2px;word-spacing: -10px}
+#one{color: red;}
+#two{color: green;}
+/*<!-- ************* navigation *************** -->*/
+#demo1n{width: 100%;height: 40px;background-color: rgba(0,255,255,0.7);padding: 5px;}
+#nav1np{ display:none;float: right;margin-right: 50px;margin-top: 5px;}
+.nav1n{width: 40px;height: 4px;margin-bottom: 5px;background-color: green;}
+#nav2{list-style: none;padding-left: 20px;text-align: center;}
+.nav1{float: left;padding-right: 5px;width: 10%;font-size: 15px;margin-top: -5px;padding-top: 10px;}
+.font1{width: 9%;height: 40px;}
+.font2{width: 14%;height: 40px;}
+.nav1:hover{background-color: orange;}
+/* Slideshow container */
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;height: 400px;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.slid1{font-size: 20px;background-color: black;color:white;text-align: center;padding: 5px 10px;margin: 0 auto;    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    width: 34%;
+    top: 50px;
+    color: #ffffff;
+    left: 33%;
+    padding: 8px 5px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 6px;
+    z-index: 999;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .2px;}
+.span1,.span2{color: red;margin: 0 auto;}
+
+
+/***************** main ****************/
+#demo1m{width: 100%;}
+.demo2m{width: 30%;height: 500px;border: 2px solid;float: left;margin:0 10px;text-align: center;
+position: relative;border-radius: 5%;margin-left: 30px;}
+.butt{width:90%;margin-bottom: 10px;background-color: green;border-radius: 10px;height: 35px;}
+#user,#pass{width: 90%;border: none;outline: none;}
+.butt1{float:right;border: none;background-color: #fff;font-size: 13px;margin-right: 20px;color: red;}
+.butt2{border: none;background-color: #fff;font-size: 11px;color: red;}
+.butt3{width:90%;margin-bottom: 10px;border:1px solid green;background-color: white;padding:5px;height: 35px;border-radius: 4px;}
+
+.p1{color: blue;}
+.img1{width: 60%;height: 100px;border: 1px solid green;padding: 5px;margin-bottom: 20px;margin-left: 21%;border-radius: 5px;}
+.img2{width: 80%;height: 100px;}
+.p2{font-size: 14px;}
+.img3{width: 150px;height: 50px;}
+/*@media screen and (min-width: 00px){
+	.demo2m{width: 100%;
+		background-color: green;}
+}*/
+/*@media screen and (mix-width: 600px){
+	.demo2m{width: 30%;
+		background-color: ;
+		margin-bottom: 10px;
+		margin-left:60px;}
+		#nav1np{display: none;}
+		#nav2{display: block;}
+}*/
+
+@media screen and (max-width: 600px){
+	.demo2m{width: 80%;
+		background-color: ;
+		margin-bottom: 10px;
+		margin-left:60px;}
+		#nav2{display: none;}
+		#nav1np{display: block;}
+}v1np:hover{background-color: red;}
+.demo10{width:100%;background-color: green;margin-bottom: 1px;margin-top: 5px;}
+.demo10:hover{background-color: yellow;}
+  </style>
+
+
+
+
+</head>
+<body>
+	<!-- ************* heading *************** -->
+	<div id="demoH">
+
+		
+	<span class="left"><i class='fas fa-phone fa-rotate-90'style="color:green;font-size: 20px;"></i>    
+	 065754466/065466568</span>
+		<span class="left"><i class='fas fa-envelope'style="color:orange;font-size: 20px;"></i> ONEHELPDESK@KARNATAKA.GOV.IN</span>
+		<span class="right">KANNADA</span>
+		<span class="right">-A A +A</span>
+		<span class="right">SINGN UP</span>
+		<span class="right">SIGN IN</span>
+	</div>
+	<div id="demoH1">
+		<div ng-app="">
+		SEARCH: 
+		<select ng-model="name1">
+			<option>india</option>
+			<option>napal</option>
+			<option>srilanka</option>
+			<option>bangladesh</option>
+			<option>pakistan</option>
+		</select>
+		<p>{{name1}}</p>
+	</div>
+		<p id="pa1">GOVERNMENT OF KARNATAKA INDIA</p>
+		<h2 id="ha1"><span id="two">Karnataka</span> <span id="one">One</span></h2>
+	</div>
+	<div id="demoN">
+		
+	</div>
+	<!-- ************* navigation *************** -->
+	<div id="demo1n">
+		<div id="nav1np">
+			<div class="nav1n"></div>
+			<div class="nav1n"></div>
+			<div class="nav1n"></div>
+		</div>
+		<ul id="nav2">
+			<li class="nav1 font1">HOME</li>
+			<li class="nav1 font1">ABOUT US <i class="fa fa-caret-down" style="font-size:20px;color:white"></i></li>
+			<li class="nav1 font1">SIGN IN</li>
+			<li class="nav1 font2">SERVICES OFFERED</li>
+			<li class="nav1 font2">ONLINE SERVICES</li>
+			<li class="nav1 font1">HELP</li>
+			<li class="nav1 font1">SITE MAP</li>
+			<li class="nav1 font1">QUICK PAY</li>
+			<li class="nav1 font2"><i class="fa fa fa-arrow-right" style="font-size:15px;color:blue"></i> GET YOUR RECEIPT</li>
+			<li class="nav1 font1">CONTACT US</li>
+		</ul>
+	</div>
+	<!-- ************* IMAGE *************** -->
+	<!-- <img src="S:\web image\pic5.jpg"width="100%"height="400px"> -->
+	<!-- Slideshow container -->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <div class="slid1"><span class="span1">Click Here</span> to donate for <span class="span2">Chief Minister's relief fund</span></div>
+  <img src="S:\web image\pic5.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+   <div class="slid1"><span class="span1">Click Here</span> to donate for <span class="span2">Chief Minister's relief fund</span></div>
+  <img src="S:\web image\pic4.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+   <div class="slid1"><span class="span1">Click Here</span> to donate for <span class="span2">Chief Minister's relief fund</span></div>
+  <img src="S:\web image\pic3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<!-- ************* External file *************** -->
+<div ng-app="" >
+		<div ng-include="'api1.html'"></div>	
+		</div>
+<!-- ************* main *************** -->
+<div id="demo1m">
+	<div class="demo2m">
+		<h3>Sign In</h3><hr>
+		<form id="form1">
+			<label>UserName or e-Mail</label></br>
+			<input type="text" name="user" id="user"></br><hr>
+			<label>Password</label></br>
+			<input type="text" name="pass" id="pass"></br><hr>
+			<button class="butt">Sign In</button></br>
+			<button class="butt">Quick Pay</button></br>
+			<button class="butt1">Forget Password</button></br>
+			<label class="butt2">Are you facing trouble in login?</label>
+			<button class="butt2">Click her to login previous version</button></br>
+			<button class="butt3">Create an account</button>
+		</form>
+		<span class="p2">Authenticated By</span>
+		<img class="img3" src="S:\web im\seal.png">
+	</div>
+	<div class="demo2m">
+		<h3>News</h3><hr>
+		<marquee direction="up"width="80%"height="50%">
+			<p class="p1">List of e stamp centers</p><hr>
+			<p class="p1">RTO RC-Extract Service is Available at all BangaloreOne and KarnatakaOne Centers.</p><hr>
+			<p class="p1">Now get Karnataka Arogya ID Card at BangaloreOne and KarnatakaOne Center (Service available at only selected centers)</p><hr>
+			<p class="p1">Now Paytm Paymode is available for all Services in Karnataka One.</p><hr>
+			<p class="p1">Now Application filling for learning licence(fresh LL)/Fee Payment for learning licence Services are Avilable at BangaloreOne and KarnatakaOne Center (Service available at only selected centers)</p><hr>
+			<p class="p1">Now Bruhat Bengaluru Mahanagara Palike and BDA Khata Services are Avilable in KarnatakaOne Centers</p><hr>
+			<p class="p1" align="center">******************</p>
+			</marquee>
+			<h3>Our Partners</h3><hr>	
+			<img class="img2" src="S:\web im\axis.jpg">
+	</div>
+	<div class="demo2m">
+		<h3>Services</h3><hr>
+		<marquee direction="up"width="60%"height="80%">
+			<img class="img1" src="S:\web image\pic1.jpg">
+			<img  class="img1"src="S:\web image\pic2.jpg">
+			<img  class="img1"src="S:\web image\pic3.jpg">
+			<img  class="img1"src="S:\web image\pic4.jpg">
+			<img  class="img1"src="S:\web image\pic5.jpg">
+			<img  class="img1"src="S:\web image\pic6.jpg">
+		</marquee>
+	</div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+var v = document.getElementById("nav1np");
+var r = document.getElementById("demo1n");
+var v1 = document.getElementById("nav2");
+var v2 = document.querySelectorAll(".nav1");
+console.log(v2[2]);
+v.onclick=function(){
+console.log(v2[3]);
+for(let i=0;i<v2.length;i++){
+	r.style.height="500px";
+	v1.style.display="block";
+	//v2[i].style.width="100%";
+	v2[i].classList.add("demo10");
+
+}
+}
+</script>
+</body>
+</html>
